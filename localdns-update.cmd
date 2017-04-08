@@ -1,15 +1,15 @@
 @ECHO OFF
-C:\localdns\wget.exe -N --no-check-certificate https://github.com/CNMan/unbound.conf/raw/master/unbound/unbound.conf --directory-prefix="C:\localdns\unbound"
-C:\localdns\wget.exe -N --no-check-certificate https://github.com/CNMan/unbound.conf/raw/master/unbound/unbound.blacklist.ips.conf --directory-prefix="C:\localdns\unbound"
-C:\localdns\wget.exe -N --no-check-certificate https://github.com/CNMan/unbound.conf/raw/master/unbound/unbound.local-zone.blacklist.domains.conf --directory-prefix="C:\localdns\unbound"
-C:\localdns\wget.exe -N --no-check-certificate https://github.com/CNMan/unbound.conf/raw/master/unbound/unbound.local-zone.hosts.conf --directory-prefix="C:\localdns\unbound"
-C:\localdns\wget.exe -N --no-check-certificate https://github.com/CNMan/unbound.conf/raw/master/unbound/unbound.forward-zone.China.conf --directory-prefix="C:\localdns\unbound"
+C:\localdns\wget.exe -N --no-check-certificate https://raw.githubusercontent.com/zhengpu1/unbound.conf/master/unbound/unbound.conf --directory-prefix="C:\localdns\unbound"
+C:\localdns\wget.exe -N --no-check-certificate https://raw.githubusercontent.com/zhengpu1/unbound.conf/master/unbound/unbound.blacklist.ips.conf --directory-prefix="C:\localdns\unbound"
+C:\localdns\wget.exe -N --no-check-certificate https://raw.githubusercontent.com/zhengpu1/unbound.conf/master/unbound/unbound.local-zone.blacklist.domains.conf --directory-prefix="C:\localdns\unbound"
+C:\localdns\wget.exe -N --no-check-certificate https://raw.githubusercontent.com/zhengpu1/unbound.conf/master/unbound/unbound.local-zone.hosts.conf --directory-prefix="C:\localdns\unbound"
+C:\localdns\wget.exe -N --no-check-certificate https://raw.githubusercontent.com/zhengpu1/unbound.conf/master/unbound/unbound.forward-zone.China.conf --directory-prefix="C:\localdns\unbound"
 C:\localdns\wget.exe -N --no-check-certificate https://www.internic.net/domain/named.cache --directory-prefix="C:\localdns\unbound"
 
-C:\localdns\wget.exe -N --no-check-certificate https://github.com/CNMan/unbound.conf/raw/master/dnscrypt-proxy/dnscrypt-proxy-cisco.conf --directory-prefix="C:\localdns\dnscrypt-proxy"
-C:\localdns\wget.exe -N --no-check-certificate https://github.com/CNMan/unbound.conf/raw/master/dnscrypt-proxy/dnscrypt-proxy-yandex.conf --directory-prefix="C:\localdns\dnscrypt-proxy"
-C:\localdns\wget.exe -N --no-check-certificate https://github.com/CNMan/unbound.conf/raw/master/dnscrypt-proxy/dnscrypt-blacklist-domains.txt --directory-prefix="C:\localdns\dnscrypt-proxy"
-C:\localdns\wget.exe -N --no-check-certificate https://github.com/CNMan/unbound.conf/raw/master/dnscrypt-proxy/dnscrypt-blacklist-ips.txt --directory-prefix="C:\localdns\dnscrypt-proxy"
+C:\localdns\wget.exe -N --no-check-certificate https://github.com/zhengpu1/unbound.conf/blob/master/dnscrypt-proxy/dnscrypt-proxy-cisco.conf --directory-prefix="C:\localdns\dnscrypt-proxy"
+C:\localdns\wget.exe -N --no-check-certificate https://github.com/zhengpu1/unbound.conf/blob/master/dnscrypt-proxy/dnscrypt-proxy-yandex.conf --directory-prefix="C:\localdns\dnscrypt-proxy"
+C:\localdns\wget.exe -N --no-check-certificate https://github.com/zhengpu1/unbound.conf/blob/master/dnscrypt-proxy/dnscrypt-blacklist-domains.txt --directory-prefix="C:\localdns\dnscrypt-proxy"
+C:\localdns\wget.exe -N --no-check-certificate https://raw.githubusercontent.com/zhengpu1/unbound.conf/master/dnscrypt-proxy/dnscrypt-blacklist-ips.txt --directory-prefix="C:\localdns\dnscrypt-proxy"
 C:\localdns\wget.exe -N --no-check-certificate https://github.com/jedisct1/dnscrypt-proxy/raw/master/dnscrypt-resolvers.csv --directory-prefix="C:\localdns\dnscrypt-proxy"
 
 REM STOP DNSCrypt
